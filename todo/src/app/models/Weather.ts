@@ -9,7 +9,16 @@ class City {
   coord: Coord;
 }
 
-class FUMain {}
+class FUMain {
+  temp: number;
+  temp_min: number;
+  temp_max: number;
+  pressure: number;
+  sea_level: number;
+  grnd_level: number;
+  humidity: number;
+  temp_kf: number;
+}
 
 class FUWeather {
   id: number;
