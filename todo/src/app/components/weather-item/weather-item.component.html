@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col">
+    <p class="day">{{ forecast.dt_txt.substr(8, 2) }}</p>
+    <p>{{ month[number(forecast.dt_txt.substr(5, 2)) - 1] }}</p>
+  </div>
+  <div class="col">
+    <p class="day">{{ forecast.dt_txt.substr(11, 5) }}</p>
+  </div>
+  <div class="col">
+    <p>
+      <span class="temp">{{ math.floor(forecast.main.temp, 10) }}</span
+      >&deg;C
+    </p>
+  </div>
+  <div class="col">
+    <p><img [src]="iconUrl" alt="" /></p>
+    <p class="wdescr">{{ forecast.weather[0].description }}</p>
+  </div>
+  <div class="col">
+    <p class="wdescr">Pressure</p>
+    <p>{{ forecast.main.pressure }} hPa</p>
+  </div>
+  <div class="col">
+    <p class="wdescr">Humidity</p>
+    <p>{{ forecast.main.humidity }}%</p>
+  </div>
+</div>

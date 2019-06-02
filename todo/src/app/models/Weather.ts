@@ -29,7 +29,7 @@ class Sys {
   pod: string;
 }
 
-class ForecastUnit {
+export class ForecastUnit {
   dt: number;
   main: FUMain;
   weather: Array<FUWeather>;
@@ -40,8 +40,8 @@ class ForecastUnit {
 }
 
 export class Weather {
-  cod: string;
-  cnt: number;
-  list: ForecastUnit;
-  city: City;
+  cod?: string;
+  cnt?: number;
+  list?: Array<ForecastUnit>;
+  city?: City;
 }

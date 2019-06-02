@@ -11,6 +11,7 @@ import { HeaderComponent } from "./components/layout/header/header.component";
 import { AddTodoComponent } from "./components/add-todo/add-todo.component";
 import { AboutComponent } from './components/pages/about/about.component';
 import { WeatherComponent } from './components/weather/weather.component';
+import { WeatherItemComponent } from './components/weather-item/weather-item.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { WeatherComponent } from './components/weather/weather.component';
     HeaderComponent,
     AddTodoComponent,
     AboutComponent,
-    WeatherComponent
+    WeatherComponent,
+    WeatherItemComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
